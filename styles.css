@@ -1,0 +1,247 @@
+@font-face { 
+    font-family: GrandSlang; 
+    src: url('./fonts/GrandSlang-Roman.otf'); 
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(./fonts/AvenirLTStd-Roman.otf);
+}
+
+body {
+    background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+* {
+    animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Avenir;
+    font-weight: 100;
+    color: #1d1e24;
+}
+
+h1 {
+    font-size: 128px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.main {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.initial-container-sticky {
+    position: sticky;
+    top: 0px;
+    padding: 20px;
+}
+
+.initial-container {
+    top: 0px;
+    padding: 20px;
+}
+
+.initial {
+    font-size: 40px;
+    text-decoration: none;
+    color: #1d1e24;
+    transition: 1s;
+}
+
+.initial:hover {
+    color: #fff;
+}
+
+.hero-section {
+    width: 85vw;
+    max-width: 1000px;
+    margin-top: 10vh;
+    margin-left: 8vw;
+}
+
+.blur {
+    -webkit-filter:blur(0px);
+    animation: unblur 3s ease;
+}
+
+@keyframes unblur {
+    0% {-webkit-filter:blur(20px);}
+    100% {-webkit-filter:blur(0px);}
+}
+
+.round-button {
+    font-size: 26px;
+    border-radius: 20px;
+    background: transparent;
+    margin-top: 46px;
+    padding: 20px 40px 20px 40px;
+    border: 1px solid #1d1e24;
+    transition: 1s;
+    letter-spacing: 8px;
+}
+
+.round-button:hover {
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.arrow-container {
+    float: right;
+    opacity: 0;
+    animation: scroll-arrow-animation 3s ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    
+}
+
+@keyframes scroll-arrow-animation {
+    0% {opacity: 0;}
+    50% {opacity: 100;}
+    100% {opacity: 0;}
+}
+
+.arrow {
+    font-size: 50px;
+}
+
+.menu-container {
+    margin: 30px;
+    display: block;
+    list-style: none;
+}
+
+.menu-item {
+    font-family: GrandSlang;
+    font-size: 128px;
+    text-decoration: none;    
+    transition: .8s;
+    left: 0px;
+}
+
+.menu-item:hover {
+    color: white;
+}
+
+/* contact page styles */
+
+#contact {
+    background-color: #1d1e24;
+}
+
+.contact-form {
+    padding: 80px;
+    height: 100%;
+}
+
+.contact-form h2 {
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.submit-button {
+    background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
+
+}
+
+
+/* project page styles */
+
+.project-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.project-description {
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10vh 10vw;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.project-subtitle {
+    text-align: center;
+    font-style: italic;
+}
+
+.project-bullets {
+    margin: 20px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
