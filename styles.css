@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #d9d9d9;
+    background: #ededed;
     min-height: 100vh;
     overflow-y: scroll;
 }
@@ -151,12 +151,13 @@ section {
     text-decoration: none;    
     transition: .5s;
     left: 0px;
+    margin: 100px 0;
 }
 
 .menu-item:hover {
     color: #000;
     font-style: italic;
-    transform: scale(2);
+    font-size: 136px;
 }
 
 /* contact page styles */
@@ -285,6 +286,10 @@ textarea {
 
     .menu-item {
         font-size: 60px;
+    }
+
+    .menu-item:hover {
+        font-size: 66px;
     }
 
     .project-menu-item {
