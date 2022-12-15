@@ -151,7 +151,6 @@ section {
     text-decoration: none;    
     transition: .5s;
     left: 0px;
-    margin: 100px 0;
 }
 
 .menu-item:hover {
@@ -164,6 +163,14 @@ section {
 
 #contact {
     background-color: #0c0e21;
+}
+
+.contact-initial {
+    color: #7ACAFF;
+}
+
+.contact-initial:hover {
+    color: #fff;
 }
 
 .contact-form {
