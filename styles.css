@@ -9,8 +9,7 @@
 }
 
 body {
-    /* background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%); */
-    background: linear-gradient(#313133, #1d1e24);
+    background: #d9d9d9;
     min-height: 100vh;
     overflow-y: scroll;
 }
@@ -34,7 +33,7 @@ body, * {
     padding: 0;
     font-family: Avenir;
     font-weight: 100;
-    color: #d9d9d9;
+    color: #2962FE;
 }
 
 h1 {
@@ -78,12 +77,12 @@ section {
 .initial {
     font-size: 40px;
     text-decoration: none;
-    color: #d9d9d9;
+    color: #2962FE;
     transition: 1s;
 }
 
 .initial:hover {
-    color: #fff;
+    color: #000;
 }
 
 .hero-section {
@@ -109,9 +108,9 @@ section {
     background: transparent;
     margin-top: 46px;
     padding: 20px 40px 20px 40px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #2962FE;
     transition: 1s;
-    letter-spacing: 8px;
+    letter-spacing: 2px;
 }
 
 .round-button:hover {
@@ -155,14 +154,15 @@ section {
 }
 
 .menu-item:hover {
-    color: white;
+    color: #000;
     font-style: italic;
+    transform: scale(2);
 }
 
 /* contact page styles */
 
 #contact {
-    background-color: #1d1e24;
+    background-color: #0c0e21;
 }
 
 .contact-form {
@@ -172,11 +172,7 @@ section {
 
 .contact-form h2 {
     text-align: center;
-    background: -webkit-linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: flex;
-    justify-content: center;
+    color: #7ACAFF;
 }
 
 label {
@@ -188,9 +184,14 @@ input {
     margin-bottom: 20px;
     padding: 20px 40px;
     border-radius: 20px;
-    background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
-    border: 1px solid black;
+    background: none;
+    border: 1px solid #7ACAFF;
     font-size: 20px;
+    color: #7ACAFF;
+}
+
+::placeholder {
+    color: #7ACAFF;
 }
 
 textarea {
@@ -198,14 +199,14 @@ textarea {
     margin-bottom: 20px;
     padding: 20px 40px;
     border-radius: 20px;
-    background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
-    border: 1px solid black;
+    background: none;
+    border: 1px solid #7ACAFF;
     font-size: 20px;
 }
 
 .submit-button {
-    background: linear-gradient(90deg, rgba(163,120,255,1) 0%, rgba(255,94,94,1) 100%);
-
+    background-color: #7ACAFF;
+    color: #000;
 }
 
 
@@ -218,12 +219,9 @@ textarea {
 }
 
 .project-description {
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid #2962FE;
     padding: 10vh 10vw;
     margin-top: 20px;
     border-radius: 20px;
