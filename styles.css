@@ -91,9 +91,18 @@ section {
     border: none;
     background: #2962FE;
     color: #ededed;
-    font-size: 30px;
-    padding: 5px 10px;
-    border-radius: 10px;
+    font-size: 26px;
+    padding: 6px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header-button:hover {
+    color: #313133;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #fff;
 }
 
 .hero-section {
@@ -120,7 +129,7 @@ section {
     margin-top: 46px;
     padding: 20px 40px 20px 40px;
     border: 1px solid #2962FE;
-    transition: 1s;
+    transition: .5s;
     letter-spacing: 2px;
 }
 
@@ -131,24 +140,6 @@ section {
     border: 1px solid #fff;
 }
 
-.arrow-container {
-    float: right;
-    opacity: 0;
-    animation: scroll-arrow-animation 3s ease;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    
-}
-
-@keyframes scroll-arrow-animation {
-    0% {opacity: 0;}
-    50% {opacity: 100;}
-    100% {opacity: 0;}
-}
-
-.arrow {
-    font-size: 50px;
-}
 
 .menu-container {
     margin: 30px;
@@ -186,7 +177,6 @@ section {
 
 .contact-form {
     padding: 0 50px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
