@@ -67,6 +67,8 @@ section {
     position: sticky;
     top: 0px;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .initial-container {
@@ -83,6 +85,15 @@ section {
 
 .initial:hover {
     color: #000;
+}
+
+.header-button {
+    border: none;
+    background: #2962FE;
+    color: #ededed;
+    font-size: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .hero-section {
@@ -174,8 +185,11 @@ section {
 }
 
 .contact-form {
-    padding: 80px;
+    padding: 0 50px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contact-form h2 {
@@ -215,6 +229,7 @@ textarea {
 .submit-button {
     background-color: #7ACAFF;
     color: #000;
+    margin: 0;
 }
 
 
